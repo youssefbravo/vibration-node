@@ -1,0 +1,17 @@
+# host build output
+build/
+
+# datasheets/manuals: re-downloadable, see docs/README.md
+docs/*.pdf
+
+# STM32CubeIDE / Eclipse generated output
+firmware/**/Debug/
+firmware/**/Release/
+firmware/**/.settings/
+*.launch
+
+# editors / OS
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
