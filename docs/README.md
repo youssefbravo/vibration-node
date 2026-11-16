@@ -5,19 +5,21 @@ than any other file in this project.
 
 | File | What it is | When you need it | Status |
 |---|---|---|---|
-| `RM0390_STM32F446_reference_manual.pdf` | **The** register-level manual (RCC, GPIO, TIM, USART, I2C, SPI, ADC, CAN...) | Every day from step 2 | ⬇ download manually |
-| `STM32F446RE_datasheet.pdf` | Pinout, alternate functions table, electrical limits (which pins are 5 V tolerant) | Wiring anything | ⬇ download manually |
-| `UM1724_Nucleo64_user_manual.pdf` | The Nucleo board: LED = PA5, button = PC13, ST-Link UART = USART2 PA2/PA3, solder bridges, Arduino/Morpho pin maps | Board day 1 | ⬇ download manually |
-| `PM0214_CortexM4_programming_manual.pdf` | Cortex-M4 core: NVIC, SysTick, exceptions, instruction set | Interrupts (step 2) | ⬇ download manually |
-| `LIS3DH_datasheet.pdf` | Accelerometer registers. WHO_AM_I = reg 0x0F → 0x33 | I2C bring-up | ⬇ download manually |
-| `INA260_datasheet.pdf` | Current/voltage/power sensor. Manufacturer ID reg 0xFE → 0x5449 | Step 4 | ✅ downloaded |
-| `DS18B20_datasheet.pdf` | 1-Wire temperature sensor timing | Step 4 | ⬇ download manually |
-| `MCP2562_datasheet.pdf` | CAN transceiver (VIO pin → connect to 3.3 V) | Step 6 | ✅ downloaded |
+| `RM0390_STM32F446_reference_manual.pdf` | **The** register-level manual (RCC, GPIO, TIM, USART, I2C, SPI, ADC, CAN...) | Every day from step 2 | ✅ |
+| `STM32F446RE_datasheet.pdf` | Pinout, alternate functions table, electrical limits (which pins are 5 V tolerant) | Wiring anything | ✅ |
+| `UM1724_Nucleo64_user_manual.pdf` | The Nucleo board: LED = PA5, button = PC13, ST-Link UART = USART2 PA2/PA3, solder bridges, Arduino/Morpho pin maps | Board day 1 | ✅ |
+| `PM0214_CortexM4_programming_manual.pdf` | Cortex-M4 core: NVIC, SysTick, exceptions, instruction set | Interrupts (step 2) | ✅ |
+| `LIS3DH_datasheet.pdf` | Accelerometer registers. WHO_AM_I = reg 0x0F → 0x33 | I2C bring-up | ✅ |
+| `INA260_datasheet.pdf` | Current/voltage/power sensor. Manufacturer ID reg 0xFE → 0x5449 | Step 4 | ✅ |
+| `DS18B20_datasheet.pdf` | 1-Wire temperature sensor timing | Step 4 | ✅ (SparkFun mirror of the Maxim datasheet; ADI's current copy is Rev 6 at the link below) |
+| `MCP2562_datasheet.pdf` | CAN transceiver (VIO pin → connect to 3.3 V) | Step 6 | ✅ |
 
-## Manual downloads
+All 8 downloaded 16 Nov 2026 and checked to be complete PDFs.
 
-ST's and Analog Devices' servers block scripted downloads, so open these in
-your normal browser and save them here with the file names above:
+## Source links (to re-download)
+
+ST's and Analog Devices' servers block scripted downloads (curl/PowerShell),
+so use a normal browser:
 
 - RM0390: https://www.st.com/resource/en/reference_manual/rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
 - STM32F446RE datasheet: https://www.st.com/resource/en/datasheet/stm32f446re.pdf

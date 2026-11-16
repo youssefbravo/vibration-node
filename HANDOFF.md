@@ -79,7 +79,7 @@ docs/BRINGUP.md  13-step board bring-up checklist
 docs/README.md   datasheet list + download links
 ```
 
-State: `git init` done, **nothing committed**. All 20 tests build cleanly
+State: skeleton committed (c39f46e). All 20 tests build cleanly
 (`-Wall -Wextra -Werror -pedantic`) and **fail on purpose**.
 
 The tests were verified against a separate reference solution (kept outside
@@ -88,10 +88,9 @@ not in the test.
 
 ## 5. Your to-do list, in order
 
-1. [ ] First commit:
-   `git add . && git commit -m "Project skeleton: roadmap, Makefile, Unity, step-1 exercises"`
-2. [ ] Install STM32CubeIDE + STM32CubeProgrammer (before Thursday)
-3. [ ] Download the 6 missing PDFs into `docs/` (links in `docs/README.md`; RM0390 first)
+1. [x] First commit (c39f46e)
+2. [ ] Install STM32CubeIDE + STM32CubeProgrammer (before Thursday) — needs you to accept ST's license and sign in to myST (or use the guest e-mail link)
+3. [x] All 8 PDFs in `docs/` (16 Nov)
 4. [ ] Watch for BerryBase's reply on ticket 353309
 5. [ ] Exercise 2: make `mingw32-make test-bitops` pass (shorter, start here)
 6. [ ] Exercise 1: make `mingw32-make test-ringbuf` pass
