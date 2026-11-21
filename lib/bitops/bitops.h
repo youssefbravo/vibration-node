@@ -23,13 +23,14 @@
 
 #include <stdint.h>
 
-/* uint32_t with only bit n set */
-#define BIT(n)                          (0u) /* TODO */
 
-#define BIT_SET(reg, n)                 do { (void)(reg); (void)(n); } while (0) /* TODO */
-#define BIT_CLR(reg, n)                 do { (void)(reg); (void)(n); } while (0) /* TODO */
-#define BIT_TGL(reg, n)                 do { (void)(reg); (void)(n); } while (0) /* TODO */
-#define BIT_GET(reg, n)                 (0u) /* TODO: 0 or 1 */
+/* uint32_t with only bit n set */
+#define BIT(n) (1u << (n))
+
+#define BIT_SET(reg, n)   do { (reg) |=  BIT(n); } while (0)
+#define BIT_CLR(reg, n)   do { (reg) &= ~BIT(n); } while (0)
+#define BIT_TGL(reg, n)   do { (reg) ^=  BIT(n); } while (0)
+#define BIT_GET(reg, n)   (((reg) >> (n)) & 1u)      
 
 /* `width` low bits set, e.g. FIELD_MASK(3) == 0x7 */
 #define FIELD_MASK(width)               (0u) /* TODO */
