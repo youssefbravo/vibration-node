@@ -1,0 +1,11 @@
+name: tests                  # the name shown on the badge
+on:
+  push:                      # run on every push...
+  pull_request:              # ...and on every pull request
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest   # a clean Linux machine from GitHub
+    steps:
+      - uses: actions/checkout@v5   # copy your repo onto it
+      - name: Build and run unit tests
+        run: make -k test           # your Makefile, unchanged

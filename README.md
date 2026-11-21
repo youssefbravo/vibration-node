@@ -1,5 +1,7 @@
 # vibration-node
 
+[![tests](https://github.com/youssefbravo/vibration-node/actions/workflows/test.yml/badge.svg)](https://github.com/youssefbravo/vibration-node/actions/workflows/test.yml)
+
 STM32 motor-monitoring node: reads vibration, current and temperature, computes
 features (RMS, FFT), flags faults, and reports over CAN to a hardware-in-the-loop
 (HiL) test rig.
@@ -11,7 +13,7 @@ DS18B20 temperature sensor · DFR0411 DC motor · MCP2562 CAN transceivers ·
 ## Status
 
 - [x] Register bit and bit-field macros (`lib/bitops`), 10/10 tests passing
-- [ ] Ring buffer (`lib/ringbuf`), in progress
+- [x] Ring buffer (`lib/ringbuf`), 10/10 tests passing
 - [ ] Board bring-up (`docs/BRINGUP.md`)
 
 ## Roadmap
