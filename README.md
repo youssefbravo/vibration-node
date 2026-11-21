@@ -11,7 +11,7 @@ DS18B20 temperature sensor · DFR0411 DC motor · MCP2562 CAN transceivers ·
 ## Status
 
 - [x] Register bit and bit-field macros (`lib/bitops`), 10/10 tests passing
-- [ ] Ring buffer (`lib/ringbuf`), in progress
+- [x] Ring buffer (`lib/ringbuf`), in progress
 - [ ] Board bring-up (`docs/BRINGUP.md`)
 
 ## Roadmap
