@@ -11,7 +11,7 @@ than any other file in this project.
 | `PM0214_CortexM4_programming_manual.pdf` | Cortex-M4 core: NVIC, SysTick, exceptions, instruction set | Interrupts (step 2) | ✅ |
 | `LIS3DH_datasheet.pdf` | Accelerometer registers. WHO_AM_I = reg 0x0F → 0x33 | I2C bring-up | ✅ |
 | `INA260_datasheet.pdf` | Current/voltage/power sensor. Manufacturer ID reg 0xFE → 0x5449 | Step 4 | ✅ |
-| `DS18B20_datasheet.pdf` | 1-Wire temperature sensor timing | Step 4 | ✅ (SparkFun mirror of the Maxim datasheet; ADI's current copy is Rev 6 at the link below) |
+| `DS18B20_datasheet.pdf` | 1-Wire temperature sensor timing | Step 4 | ✅ (official Analog Devices copy) |
 | `MCP2562_datasheet.pdf` | CAN transceiver (VIO pin → connect to 3.3 V) | Step 6 | ✅ |
 
 All 8 downloaded 16 Nov 2026 and checked to be complete PDFs.
